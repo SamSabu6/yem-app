@@ -5,7 +5,9 @@ import { BsFillCartFill, BsPerson } from "react-icons/bs";
 import { TbTruckReturn } from "react-icons/tb";
 import { FaWallet } from "react-icons/fa";
 import { MdHelp, MdOutlineFavorite } from "react-icons/md";
-
+import "./pages/MyAccount";
+import "./pages/Delivery";
+import { Link } from "react-router-dom";
 
 export default function TopNav() {
   const [sideNav, setSideNav] = useState(false);
@@ -62,7 +64,7 @@ export default function TopNav() {
         </h2>
         <nav>
           <ul className="flex flex-col p-4 text-grey-900">
-            <button className="border-none" onClick={() => {'src/components/pages/MyAccount'}} >
+            <Link to="/my-account">
               <li className="text-xl py-4 flex">
                 <BsPerson
                   size={25}
@@ -70,8 +72,8 @@ export default function TopNav() {
                 />
                 My Account
               </li>
-            </button>
-            <button className="border-none">
+            </Link>
+            <Link to="/delivery">
               <li className="text-xl py-4 flex">
                 <TbTruckReturn
                   size={25}
@@ -79,29 +81,30 @@ export default function TopNav() {
                 />
                 Delivery
               </li>
-            </button>
-            <button className="border-none"> 
+            </Link>
+            <button className="border-none">
               <li className="text-xl py-4 flex">
-              <MdOutlineFavorite
-                size={25}
-                className="mr-4 text-black bg-white rounded-full"
-              />
-              Favorites
-            </li></button>
-            <button className="border-none">
-            <li className="text-xl py-4 flex">
-              <FaWallet size={23} className="mr-4 text-black bg-white " />
-              Wallet
-            </li>
+                <MdOutlineFavorite
+                  size={25}
+                  className="mr-4 text-black bg-white rounded-full"
+                />
+                Favorites
+              </li>
             </button>
             <button className="border-none">
-            <li className="text-xl py-4 flex">
-              <MdHelp
-                size={25}
-                className="mr-4 text-white bg-black rounded-full"
-              />
-              Help
-            </li>
+              <li className="text-xl py-4 flex">
+                <FaWallet size={23} className="mr-4 text-black bg-white " />
+                Wallet
+              </li>
+            </button>
+            <button className="border-none">
+              <li className="text-xl py-4 flex">
+                <MdHelp
+                  size={25}
+                  className="mr-4 text-white bg-black rounded-full"
+                />
+                Help
+              </li>
             </button>
           </ul>
         </nav>
