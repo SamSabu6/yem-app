@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Categories from "./components/Categories";
 import Delivery from "./components/Delivery";
 import Featured from "./components/Featured";

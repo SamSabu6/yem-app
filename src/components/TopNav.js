@@ -5,8 +5,8 @@ import { BsFillCartFill, BsPerson } from "react-icons/bs";
 import { TbTruckReturn } from "react-icons/tb";
 import { FaWallet } from "react-icons/fa";
 import { MdHelp, MdOutlineFavorite } from "react-icons/md";
-import "./pages/MyAccount";
-import "./pages/Delivery";
+// import "./pages/MyAccount";
+// import "./pages/Delivery";
 import { Link } from "react-router-dom";
 
 export default function TopNav() {
